@@ -3,8 +3,6 @@
 
 -- Select all cities of California using a subquery to get the state_id of California
 
-USE hbtn_0d_usa;
-
 SELECT *
 FROM cities
 WHERE state_id = (SELECT id FROM states WHERE name = 'California')
